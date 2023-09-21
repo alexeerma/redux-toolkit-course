@@ -1,4 +1,3 @@
-import React from 'react'
 import { useDispatch } from 'react-redux';
 import { removeReservation } from '../features/reservationSlice';
 import { addCustomer } from '../features/customerSlice';
@@ -6,10 +5,10 @@ import { v4 as uuid } from "uuid";
 
 interface ReservationCardTypes {
     name: string;
-    index: number
+    index: number;
 }
 
-export default function ReservationCard({name}: ReservationCardTypes) {
+export default function ReservationCard({name, index}: ReservationCardTypes) {
 
     const dispatch = useDispatch();
 
